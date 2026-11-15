@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Boston Trash Storage Violations 2026</title>
+<meta name="description" content="Nine in ten of Boston's 33,225 improper trash storage citations in 2026 were at homes, and Dorchester's residential total is more than double the average of six comparison neighborhoods.">
+<style>
+  :root{
+    --bg:#faf8f5; --fg:#1d1d1f; --muted:#5f6368; --rule:#ddd6cb; --card:#fff;
+    --accent:#b3261e; --blue:#2f5d8a; --pos:#b3261e; --neg:#2f5d8a;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){--bg:#16171a;--fg:#ececec;--muted:#a0a4aa;--rule:#33353a;--card:#1f2024;--accent:#ff8a80;--blue:#8fb8e8;--pos:#ff8a80;--neg:#8fb8e8}
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);font:18px/1.65 Georgia,"Times New Roman",serif}
+  .wrap{max-width:760px;margin:0 auto;padding:40px 16px 64px}
+  .kicker{font:600 13px/1 system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:0 0 14px}
+  h1{font-size:clamp(28px,5.5vw,42px);line-height:1.15;margin:0 0 14px}
+  .byline{font:14px system-ui,sans-serif;color:var(--muted);margin:0 0 28px}
+  .lede{font-size:21px;line-height:1.55}
+  h2{font:700 22px/1.3 system-ui,sans-serif;margin:44px 0 10px}
+  p{margin:0 0 18px}
+  a{color:var(--blue)}
+  blockquote{margin:22px 0;padding:2px 0 2px 18px;border-left:3px solid var(--accent);font-style:italic}
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:28px 0}
+  .stat{background:var(--card);border:1px solid var(--rule);border-radius:8px;padding:14px;font-family:system-ui,sans-serif}
+  .stat b{display:block;font-size:28px;line-height:1.1}
+  .stat span{font-size:13px;color:var(--muted)}
+  figure{margin:20px 0 8px;background:var(--card);border:1px solid var(--rule);border-radius:10px;padding:16px}
+  figcaption{font:13px/1.5 system-ui,sans-serif;color:var(--muted);margin-top:10px}
+  .chartbox{position:relative;height:340px}
+  .mapbox{position:relative;width:100%;height:760px;border:1px solid var(--rule);border-radius:10px;overflow:hidden;background:var(--card)}
+  .mapbox iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  table{width:100%;border-collapse:collapse;font:14px system-ui,sans-serif;margin-top:14px}
+  th,td{padding:6px 8px;border-bottom:1px solid var(--rule);text-align:right}
+  th:first-child,td:first-child{text-align:left}
+  tr.hl td{font-weight:700}
+  .how,.limit{font-family:system-ui,sans-serif;font-size:16px;background:var(--card);border:1px solid var(--rule);border-radius:10px;padding:14px 18px}
+  .how ol,.how ul{margin:6px 0 0;padding-left:20px}
+  .small{font:15px/1.6 system-ui,sans-serif}
+  .small li{margin-bottom:6px}
+  footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--rule)}
+  @media (max-width:560px){.stats{grid-template-columns:1fr}.mapbox{height:620px}body{font-size:17px}}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <p class="kicker">Boston · Code enforcement · 2026</p>
+  <h1>Nine in 10 of Boston’s trash-storage citations are at homes, and Dorchester’s total is more than double the neighborhood average</h1>
+  <p class="byline">By Laila Griffin · Northeastern University, JRNL 3700</p>
+
+  <p class="lede">Boston has issued 33,225 citations for improper trash storage in 2026. Of those, 30,093 were at residential properties. Dorchester alone accounts for 6,494, about one of every five.</p>
+
+  <p>Those figures come from <a href="https://data.boston.gov/dataset/public-works-violations">public data</a> released by the City of Boston, where each row is a citation from the Public Works Department’s Code Enforcement Division. Dorchester, the city’s largest neighborhood, recorded 13,054 citations of all types this year. The 6,494 for improper residential trash storage make up the largest single category.</p>
+
+  <p>The numbers come as city officials continue to emphasize proper waste disposal as a key part of keeping Boston’s neighborhoods clean and limiting rodent activity. In a late August announcement outlining the City’s preparations for September’s busy student move-in period, Mayor Michelle Wu and her administration urged residents to follow trash collection rules and dispose of household waste properly. In the <a href="https://www.boston.gov/news/mayor-michelle-wu-announces-citys-preparations-move-period-welcomes-college-and-university">press release</a>, the administration described proper storage and disposal as the “most impactful way to deter rodents.”</p>
+
+  <blockquote>“Our crews are prepared for the increased volume of trash, but we need everyone’s help to keep Boston clean,” said Dennis Roache, superintendent of the Waste Reduction Division. He encouraged residents to follow collection schedules and place trash and recycling at the curb.</blockquote>
+
+  <p>But the city’s enforcement data suggests the problem extends well beyond seasonal increases in household waste.</p>
+
+  <div class="stats" role="list">
+    <div class="stat" role="listitem"><b>90.6%</b><span>of improper trash storage citations are residential (30,093 of 33,225)</span></div>
+    <div class="stat" role="listitem"><b>21.6%</b><span>of those residential citations are in Dorchester (6,494 of 30,093)</span></div>
+    <div class="stat" role="listitem"><b>9.6×</b><span>residential citations per commercial one (30,093 vs. 3,132)</span></div>
+  </div>
+
+  <h2>Explore the map</h2>
+  <p>Every dot is one citation. The map below separates residential and commercial improper trash storage across the city, over a 2018 household income layer.</p>
+
+  <div class="how">
+    <strong>How to use the map</strong>
+    <ul>
+      <li><b>Hover</b> over a dot to see the neighborhood, violation type and citation count.</li>
+      <li><b>Click</b> a dot to pin its tooltip; click empty space to clear it.</li>
+      <li><b>Zoom and pan</b> with the scroll wheel, the + / − controls, or by dragging.</li>
+      <li><b>Filter and highlight:</b> click “Commercial” or “Residential” in the legend to highlight one type, and use any filter control shown beside or below the map. Click the same item again to clear it.</li>
+      <li>Use the <b>undo / reset</b> buttons in the toolbar at the bottom of the map to return to the starting view.</li>
+    </ul>
+  </div>
+
+  <figure style="padding:0;border:0;background:none;margin-top:16px">
+    <div class="mapbox">
+      <iframe
+        title="Interactive Tableau map: commercial versus residential improper trash storage violations across Boston, 2026"
+        src="https://public.tableau.com/views/ImproperTrashStorageViolationsMap2/trashstorage?:embed=y&amp;:showVizHome=no&amp;:display_count=n&amp;:showShareOptions=false&amp;:toolbar=yes&amp;:tabs=no"
+        loading="lazy" allowfullscreen></iframe>
+    </div>
+    <figcaption>Interactive map built in Tableau Public. Source: Analyze Boston. Background: 2018 household income by ZIP code. If the map does not load, <a href="https://public.tableau.com/app/profile/laila.griffin/viz/ImproperTrashStorageViolationsMap2/trashstorage">open it on Tableau Public</a>.</figcaption>
+  </figure>
+
+  <h2>How far above average is Dorchester?</h2>
+  <p>To test whether Dorchester’s count is an outlier, improper residential trash storage citations were compared across the six neighborhoods in the cleaned dataset that had all four of the most common violation types. The average across those six is 2,843. Dorchester’s 6,494 is 3,651 citations above that mean, or <b>128% higher</b>. Compared with the average of the other five alone (2,112), it is 207% higher. Roxbury, at 2,777, is within 3% of the mean, and Mattapan sits 55% below it.</p>
+
+  <figure>
+    <div class="chartbox" style="height:auto"><svg viewBox="0 0 700 345" width="100%" role="img" aria-labelledby="ct cd" style="display:block;font-family:system-ui,sans-serif"><title id="ct">Percent difference from the six-neighborhood mean, improper residential trash storage citations</title><desc id="cd">Dorchester is 128 percent above the mean; Roxbury 2 percent below; Brighton 11 percent below; South Boston 20 percent below; Back Bay/Beacon Hill 41 percent below; Mattapan 55 percent below.</desc><line x1="184" x2="184" y1="10" y2="290" stroke="var(--rule)"/><text x="184" y="308" text-anchor="middle" font-size="12" fill="var(--muted)">-50%</text><line x1="304" x2="304" y1="10" y2="290" stroke="var(--rule)"/><text x="304" y="308" text-anchor="middle" font-size="12" fill="var(--muted)">0%</text><line x1="424" x2="424" y1="10" y2="290" stroke="var(--rule)"/><text x="424" y="308" text-anchor="middle" font-size="12" fill="var(--muted)">+50%</text><line x1="544" x2="544" y1="10" y2="290" stroke="var(--rule)"/><text x="544" y="308" text-anchor="middle" font-size="12" fill="var(--muted)">+100%</text><text x="150" y="40" text-anchor="end" font-size="14" fill="var(--fg)">Dorchester</text><rect x="304" y="20" width="308.3" height="30" rx="3" fill="var(--pos)"/><text x="618.3" y="40" text-anchor="start" font-size="13" font-weight="600" fill="var(--fg)">+128.4%</text><text x="150" y="86" text-anchor="end" font-size="14" fill="var(--fg)">Roxbury</text><rect x="298.5" y="66" width="5.5" height="30" rx="3" fill="var(--neg)"/><text x="312" y="86" text-anchor="start" font-size="13" font-weight="600" fill="var(--fg)">−2.3%</text><text x="150" y="132" text-anchor="end" font-size="14" fill="var(--fg)">Brighton</text><rect x="278" y="112" width="26" height="30" rx="3" fill="var(--neg)"/><text x="312" y="132" text-anchor="start" font-size="13" font-weight="600" fill="var(--fg)">−10.8%</text><text x="150" y="178" text-anchor="end" font-size="14" fill="var(--fg)">South Boston</text><rect x="256.2" y="158" width="47.8" height="30" rx="3" fill="var(--neg)"/><text x="312" y="178" text-anchor="start" font-size="13" font-weight="600" fill="var(--fg)">−19.9%</text><text x="150" y="224" text-anchor="end" font-size="14" fill="var(--fg)">Back Bay/Beacon Hill</text><rect x="206.3" y="204" width="97.7" height="30" rx="3" fill="var(--neg)"/><text x="312" y="224" text-anchor="start" font-size="13" font-weight="600" fill="var(--fg)">−40.7%</text><text x="150" y="270" text-anchor="end" font-size="14" fill="var(--fg)">Mattapan</text><rect x="172.7" y="250" width="131.3" height="30" rx="3" fill="var(--neg)"/><text x="312" y="270" text-anchor="start" font-size="13" font-weight="600" fill="var(--fg)">−54.7%</text><text x="400" y="335" text-anchor="middle" font-size="12" fill="var(--muted)">% difference from six-neighborhood mean (2,843 citations)</text></svg></div>
+    <figcaption><b>Percent difference from the six-neighborhood mean in improper residential trash storage citations, 2026.</b> % difference = (neighborhood − mean) ÷ mean. Source: Analyze Boston, Public Works Violations, cleaned and pivoted by the author.</figcaption>
+    <table aria-label="Calculation table"><thead><tr><th>Neighborhood</th><th>Citations</th><th>Diff. from mean</th><th>% diff.</th></tr></thead><tbody><tr class="hl"><td>Dorchester</td><td>6,494</td><td>+3,651</td><td>+128.4%</td></tr><tr><td>Roxbury</td><td>2,777</td><td>−66</td><td>−2.3%</td></tr><tr><td>Brighton</td><td>2,535</td><td>−308</td><td>−10.8%</td></tr><tr><td>South Boston</td><td>2,276</td><td>−567</td><td>−19.9%</td></tr><tr><td>Back Bay/Beacon Hill</td><td>1,686</td><td>−1,157</td><td>−40.7%</td></tr><tr><td>Mattapan</td><td>1,288</td><td>−1,555</td><td>−54.7%</td></tr><tr><td><i>Mean of six</i></td><td>2,843</td><td>–</td><td>–</td></tr></tbody></table>
+  </figure>
+
+  <h2>What the data can and can’t say</h2>
+  <p>Dorchester’s 6,494 residential citations represent approximately 22% of Boston’s 30,093. The concentration contrasts with smaller, more affluent neighborhoods like Chestnut Hill, which recorded just 2 citations of any type this year.</p>
+  <p>The numbers at the very least tell us Boston’s trash storage violations are overwhelmingly residential, and Dorchester accounts for a substantial portion of the city’s enforcement activity.</p>
+  <p>“By working together and being good neighbors, we can help keep Boston a safe, healthy, and welcoming city for everyone,” said Tania del Rio, inspectional services commissioner, in the same press release.</p>
+
+  <div class="limit">
+    <strong>Limitations</strong>
+    <p style="margin:8px 0 0">The data doesn’t convey the extremity of each violation, so citations may not be truly comparable. Counts are not adjusted for population or housing units; Dorchester is the city’s largest neighborhood, so a higher total is partly expected. Citations also reflect where inspectors look and respond to complaints, not necessarily where trash problems are worst. The income layer is from 2018 while the citations are from 2026. Finally, thousands of points on one map make dense areas hard to read, and the six-neighborhood comparison omits other neighborhoods.</p>
+  </div>
+
+  <footer>
+    <h2 style="margin-top:0">About this page</h2>
+    <p class="small"><b>Author:</b> Laila Griffin</p>
+
+    <p class="small"><b>Data sources</b></p>
+    <ul class="small">
+      <li><a href="https://data.boston.gov/dataset/public-works-violations">Public Works Violations</a>, Analyze Boston (City of Boston). Citation-level records with latitude and longitude from the Code Enforcement Division, updated routinely.</li>
+      <li><a href="https://www.boston.gov/news/mayor-michelle-wu-announces-citys-preparations-move-period-welcomes-college-and-university">Mayor Wu announces the City’s preparations for the student move-in period</a>, City of Boston press release.</li>
+      <li>2018 household income by ZIP code: Tableau Public’s built-in demographic map layer.</li>
+      <li><a href="https://public.tableau.com/app/profile/laila.griffin/viz/ImproperTrashStorageViolationsMap2/trashstorage">Map: commercial vs. residential violations</a> and <a href="https://public.tableau.com/app/profile/laila.griffin/viz/ImproperTrashStorageViolationsMap1/DorchestervsChestnutHill2">companion map: Dorchester vs. Chestnut Hill</a> (Tableau Public).</li>
+    </ul>
+
+    <p class="small"><b>Methods.</b> I filtered the Public Works Violations data to 2026 and cleaned it, correcting ZIP codes to assign each citation to a neighborhood (Violation_City). In Tableau, I plotted unaggregated latitude and longitude, colored points by violation description, set citation counts as tooltips, and added a description filter and a household income background layer. For the chart, I pivoted citations by neighborhood and violation type in Excel, took the mean of improper residential trash storage across the six neighborhoods in that pivot (Back Bay/Beacon Hill, Brighton, Dorchester, Mattapan, Roxbury, South Boston), and calculated each neighborhood’s difference from that mean as a percent. Citywide residential and commercial totals come from a separate pivot of violation types. Neighborhood totals of 13,054 and similar figures count all violation types, whereas 33,225 counts only residential and commercial improper trash storage.</p>
+
+    <p class="small"><b>AI disclosure.</b> I wrote the story and made the Tableau maps. I used Claude, an AI assistant from Anthropic, to help build this web page: it laid out the HTML and CSS, wrote the chart code, and recalculated the percent differences from my Excel pivot tables. I reviewed the figures against my spreadsheet.</p>
+  </footer>
+</main>
+
+</body>
+</html>
